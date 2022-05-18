@@ -1,11 +1,86 @@
-/* img {
-    position:absolute
+body {
+    background-color: rgb(0, 0, 0);
 }
-span {
-    background-color: rgb(212, 224, 234);
-    font-size: 28px;
-position:relative;
-top: 200px;   
-left: 160px;
 
-} */
+h2 {
+    color: rgb(118, 138, 85);
+    text-align: center;
+    padding-right: 200px;
+}
+
+.board {
+    border: solid rgb(179, 208, 129);
+    border-width: 10px 10px 0px 10px;
+    height: 800px;
+    /* width: 1400px; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    padding: 2px;
+}
+
+.grid-item {
+    height: 25px;
+    width: 100%;
+}
+
+.red-brick {
+    background-color: rgb(255, 102, 102);
+    border-radius: 3px;
+}
+
+.yellow-brick {
+    background-color: rgb(246, 246, 116);
+    border-radius: 3px;
+}
+.ball-left {
+    background-color: rgb(219, 217, 217);
+    height: 10px;
+    width: 10px;
+}
+
+.ball-right {
+    background-color: rgb(219, 217, 217);
+    height: 10px;
+    width: 10px;
+    float: right;
+}
+
+.green-brick {
+    background-color: rgb(106, 255, 106);
+    border-radius: 3px;
+}
+
+.blue-brick {
+    background-color: rgb(83, 83, 253);
+    border-radius: 3px;
+}
+.last {
+    margin-bottom: 30px;
+}
+
+.grid-item-last {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    padding: 2px;
+}
+.ball-right-bottom {
+    background-color: rgb(219, 217, 217);
+    height: 10px;
+    width: 10px;
+    position:absolute;
+    left: 8.5%;
+    
+}
+.bumper {
+    background-color: rgb(118, 138, 85);
+    height: 15px;
+    width: 200px;
+    position:absolute;
+    left: 50%;
+    bottom: 100px;
+}
